@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      nav {
+        width: 100vw;
+        height: 10vh;
+        background-color: orange;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      nav ul {
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li class="nav"></li>
+          <li class="nav"></li>
+          <li class="nav"></li>
+          <li class="nav"></li>
+          <li class="nav"></li>
+        </ul>
+      </nav>
+    </header>
+
+    <script>
+      let nav = ["Home", "About", "Portfolio", "Sign In", "Login"];
+
+      let className = document.getElementsByClassName("nav");
+
+      for (let ind = 0; ind < nav.length; ind++) {
+        className[ind].innerHTML = nav[ind];
+      }
+    </script>
+  </body>
+</html>
